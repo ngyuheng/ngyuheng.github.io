@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+* {
+    font-family: 'Signika', sans-serif;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: inline;
+}
+
+.main-content {
+    height: 50vh;
+    align-content: end;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    justify-self: center;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Strip Button Styling */
+button {
+    background-color: inherit;
+    color: inherit;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+header {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0.1rem 1rem lightgray;
+}
+
+.lang-dropdown {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    display: none;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2px 20px;
+    margin-left: -15px;
+}
+
+.show {
+    display: block;
+}
+
+.lang-button {
+    padding: 2px;
+}
+
+.header-button {
+    font-size: 1.2em;
+    display: flex;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.construction-img {
+    margin-top: 20px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    align-self: center;
+}
