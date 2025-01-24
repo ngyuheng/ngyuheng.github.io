@@ -89,3 +89,10 @@ header {
     border-radius: 50%;
     align-self: center;
 }
+
+@media (max-width: 1000px) {
+    .construction-img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
