@@ -1,0 +1,268 @@
+{
+    "texts": [
+        {
+            "id": "about-me-text",
+            "text": "Hallo! Ich bin Yu Heng. Ich bin ein J1-Schüler, der bei der <a href='https://hci.edu.sg'>Hwa Chong Institution↵</a> ist.<br><br>Als ich 13 Jahre alt war, fing ich an, Deutsch zu lernen. (Bis heute kann ich nicht erklären, warum ich Deutsch als meine dritte Fremdsprache gewählt habe!) Das war keine einfache Entscheidung. Der Prozess, Deutsch zu lernen, ist auch nicht einfach! Natürlich ist mein Deutsch nicht so gut wie das eines Deutschen. Also entschuldige ich mich dafür, dass diese Website einige Fehler hat.<br><br>Meine Hobbys sind Programmieren und Forschen. In meiner Freizeit sehe ich viele Katzenvideos im Internet an <a onclick='addCat(); return false;' style='cursor: pointer'>😸↵</a>."
+        },
+        {
+            "id": "my-details-title",
+            "text": "Meine persönlichen Details"
+        },
+        {
+            "id": "location",
+            "text": "Lebensort: Singapore"
+        },
+        {
+            "id": "education",
+            "text": "Schule: <a href='https://hci.edu.sg'>Hwa Chong Institution↵</a> (2021 - Present)"
+        },
+        {
+            "id": "subjects",
+            "text": "Fächer: Physik, Chemie, Mathe, Deutsch (PCMGm)"
+        },
+        {
+            "id": "languages",
+            "text": "Fremdsprachen: Englisch, Chinesisch, Deutsch"
+        },
+        {
+            "id": "contact-me-title",
+            "text": "Kontaktiere mich"
+        },
+        {
+            "id": "contact-email",
+            "text": "Email: <a href='mailto:211491L@student.hci.edu.sg'>211491L@student.hci.edu sg↵</a>"
+        },
+        {
+            "id": "contact-insta",
+            "text": "Instagram: <a href='https://www.instagram.com/yuheng_28/'>yuheng_28↵</a>"
+        },
+        {
+            "id": "contact-discord",
+            "text": "Discord: @osdoge"
+        },
+        {
+            "id": "contact-github",
+            "text": "GitHub: <a href='https://github.com/ngyuheng'>ngyuheng↵</a>"
+        },
+        {
+            "id": "language-proficiency-title",
+            "text": "Programmiersprachen-Kentnisse"
+        },
+        {
+            "id": "language-disclaimer",
+            "text": "Notiz: Nachfolgend finden Sie Programmiersprachen, die ich kenne. Sie sind jedoch nur ein Maß meiner Selbstbewertung und nicht unbedingt repräsentativ für meine tatsächlichen Fähigkeiten."
+        },
+        {
+            "id": "projects-title",
+            "text": "Projekte"
+        },
+        {
+            "id": "projects-intro",
+            "text": "Nachfolgend finden Sie einige Beispiel, die meine Fähigkeiten widerspiegeln:"
+        },
+        {
+            "id": "project-1-title",
+            "text": "<a href='https://github.com/ngyuheng/whatsapp-summariser'>WhatsApp Summariser↵</a>"
+        },
+        {
+            "id": "project-1-organisation",
+            "text": "Organisation: Ich"
+        },
+        {
+            "id": "project-1-skills",
+            "text": "Fähigkeiten: "
+        },
+        {
+            "id": "project-1-desc",
+            "text": "Dieses Projekt war ein Versuch, das Lesen der WhatsApp Nachrichten einfacher zu sein. Mit Google Gemini, paraphrasiert der WhatsApp Summariser die Nachrichten in einer leichter zu verstehenden Form."
+        },
+        {
+            "id": "project-2-title",
+            "text": "<a href='https://github.com/turb0space/UART'>UART-Treiber des Arduino ATMega↵</a>"
+        },
+        {
+            "id": "project-2-organisation",
+            "text": "Organisation: <a href='https://www.dso.org.sg/'>DSO National Laboratories↵"
+        },
+        {
+            "id": "project-2-skills",
+            "text": "Fähigkeiten: "
+        },
+        {
+            "id": "project-2-desc",
+            "text": "Zuerst war dieses Projekt ein Teil eines großen Projekts. Es ist ein Treiber für den Arduino ATMega, der die UART-Kommunikation ermöglicht."
+        },
+        {
+            "id": "project-3-title",
+            "text": "<a href='https://github.com/ngyuheng/Science-Alternative-Assessment'>Manim Animation↵</a>"
+        },
+        {
+            "id": "project-3-organisation",
+            "text": "Organisation: <a href='https://hci.edu.sg'>Hwa Chong Institution↵</a>"
+        },
+        {
+            "id": "project-3-skills",
+            "text": "Fähigkeiten: "
+        },
+        {
+            "id": "project-3-desc",
+            "text": "Dies war ein Versuch, Wissenschaft in einer anderen Form zu präsentieren, damit Menschen Wissenschaft einfacher zu verstehen können."
+        },
+        {
+            "id": "research-title",
+            "text": "Erforschung"
+        },
+        {
+            "id": "research-intro",
+            "text": "Nachfolgend finden Sie eine Liste meiner Forschungsprojekte, die fertig sind:"
+        },
+        {
+            "id": "research-1-title",
+            "text": "Synthesis and Properties of Chitin-Derived Hydrogels"
+        },
+        {
+            "id": "research-1-organisation",
+            "text": "Organisation: <a href='https://hci.edu.sg'>Hwa Chong Institution↵</a>"
+        },
+        {
+            "id": "research-1-year",
+            "text": "Jahr: 2022"
+        },
+        {
+            "id": "research-1-fields",
+            "text": "Bereiche: "
+        },
+        {
+            "id": "research-1-desc",
+            "text": "This project aims to investigate the adsorption of heavy metal ions and dyes in chitin-derived hydrogels. The experiment involves the synthesis of hydrogels from chitin derived from crab shells before testing its heavy metal, and dye adsorbability. Heavy metals solutions, namely Cu2+, Fe3+, and Zn2+ ion solutions were used to determine the heavy metal adsorbability of chitin hydrogel while dye solutions, namely Methylene Blue, Direct Red 80 and Methyl Orange solutions, were used to determine the dye adsorbability of chitin hydrogel. The pH of the solutions were also changed to determine its effect on the adsorption of the Direct Red 80, and methylene blue solutions. Of the various different solutions tested, hydrogel performed better than chitin in the adsorption of methylene blue and methyl orange, and in direct red when the solution was basic at pH 12. Chitin performed better in the adsorption of the Cu2+ ion and direct red when neutral at pH 7. However there is negligible difference in the adsorption of Fe3+, and Zn2+ ion solutions."
+        },
+        {
+            "id": "research-2-title",
+            "text": "Optimised Numerical Methods for the Computation of Particles in Fusion Hotspots and Particle Interactions in Magnetized Liner Inertial Fusion (MagLIF)"
+        },
+        {
+            "id": "research-2-organisation",
+            "text": "Organisation: <a href='https://www.ntu.edu.sg/nie'>NTU/NIE↵"
+        },
+        {
+            "id": "research-2-year",
+            "text": "Jahr: 2023"
+        },
+        {
+            "id": "research-2-fields",
+            "text": "Bereiche: "
+        },
+        {
+            "id": "research-2-desc",
+            "text": "Computation of particle interactions is possible. It however requires a lot of computer resources. This project aims to simulate particle interactions in fusion hotspots and Magnetised Liner Inertial Fusion (MagLIF). Using the Barnes-Hut Algorithm, C++, and Python, we can create a more efficient simulation through estimations of particle interactions. The simulation was then used to visualise particle movements. Various events such as the initial velocities of particles, coulombs explosion, compression of fusion fuel and general particle interactions in fusion hotspots and MagLIF. Ongoing work is being done to reduce the prevalence of bugs and improve the accuracy of this model even further. This model can allow for the simulation of particle interactions to be more easily accessible regardless of device specifications."
+        },
+        {
+            "id": "research-3-title",
+            "text": "Synthesising and Comparing the Microplastic Degradation Efficiencies of Magnetically Removable Bismuth Based Microswimmers"
+        },
+        {
+            "id": "research-3-organisation",
+            "text": "Organisation: <a href='https://hci.edu.sg'>Hwa Chong Institution↵</a>"
+        },
+        {
+            "id": "research-3-year",
+            "text": "Jahr: 2024"
+        },
+        {
+            "id": "research-3-fields",
+            "text": "Bereiche: "
+        },
+        {
+            "id": "research-3-desc",
+            "text": "<Microplastics, being non-biodegradable, present a critical environmental and biological hazard, impacting a wide array of organisms, including humans. However, microswimmers have been shown as a promising area of research to combat these problems by degrading these microplastics, although the efficiencies of microswimmers may differ widely. Hence, this study aims to synthesise and evaluate bismuth-based microswimmers to determine their efficiency in degrading commonly encountered plastic types such as polyvinyl chloride and polystyrene. <br><br>Through comparative analysis, this project aims to elucidate the potential of these microswimmers in mitigating microplastic pollution, contributing to the development of effective environmental remediation strategies. Characterisation of microswimmers were conducted before the experimentation process to determine its morphological structure and band gaps, which assist in the movement and degradation of microplastics. The characterised microswimmers were then able to successfully degrade microplastics of &lt;100µm in a hydrogen peroxide medium, which acts as fuel to aid the propulsion of microswimmers. <br><br>This study identifies BiVO4 and Bi2WO6 to both be comparable microswimmers in terms of their efficiencies in degrading microplastics in water and hydrogen peroxide, with both performing significantly better in terms of degrading microplastics, as compared to decomposition in water only due to the free radicals formed from UV and VIS wavelengths. Thus, both BiVO4 and Bi2WO6 microswimmers are promising in terms of their ability to remove microplastics from water through degradation via Advanced Oxidative Processes (AOP)."
+        },
+        {
+            "id": "research-4-title",
+            "text": "Optimisation of Continuous Development from Flatsat to 3D Cubesat – A Novel Over-the-Air Solution"
+        },
+        {
+            "id": "research-4-organisation",
+            "text": "Organisation: <a href='https://dso.org.sg'>DSO National Laboratories↵</a>"
+        },
+        {
+            "id": "research-4-year",
+            "text": "Jahr: 2024"
+        },
+        {
+            "id": "research-4-fields",
+            "text": "Bereiche: "
+        },
+        {
+            "id": "research-4-desc",
+            "text": "Cube Satellites (CubeSats) are preferred for their low cost and short development cycles compared to large-scale satellites, and especially popular for Educational Institutions for research purposes. However, industry established development and practices can be improved for time efficiency. This report validates the use of Over-The-Air (OTA) reprogramming and debugging to eliminate the need to deconstruct working hardware, thus eliminating points of failure, and significantly decreasing development time while keeping costs low."
+        },
+        {
+            "id": "construction-msg",
+            "text": "Webpage under construction"
+        },
+        {
+            "id": "2021-award-title",
+            "text": "Auszeichnungen"
+        },
+        {
+            "id": "2022-award-title",
+            "text": "Auszeichnungen"
+        },
+        {
+            "id": "2023-award-title",
+            "text": "Auszeichnungen"
+        },
+        {
+            "id": "2024-award-title",
+            "text": "Auszeichnungen"
+        },
+        {
+            "id": "2021-exp-title",
+            "text": "Erfahrungen"
+        },
+        {
+            "id": "2022-exp-title",
+            "text": "Erfahrungen"
+        },
+        {
+            "id": "2023-exp-title",
+            "text": "Erfahrungen"
+        },
+        {
+            "id": "2024-exp-title",
+            "text": "Erfahrungen"
+        },
+        {
+            "id": "2021-awards",
+            "text": "<li>Top in Level: English Language and Literature</li><li>Annie Tan (Mrs Wan Boo Sow) Bilingual Award</li>"
+        },
+        {
+            "id": "2022-awards",
+            "text": "<li>Sentinel Challenge Invitational (3rd Place)</li>"
+        },
+        {
+            "id": "2023-awards",
+            "text": "<li>A*STAR Science Awards (Upper Secondary)</li><li>Singapore Youth Festival (Concert Band) - Distinction</li><li>ESIS (Secondary 3) Award</li><li>Ong Teng Cheong Leadership Certification Programme</li><li>Youth Science Conference 2023 - Merit</li><li>International Conference on Plasma Science and Applications - Best Contribution in Group Award</li><li>International Conference on Plasma Science and Applications - Best Presentation Award</li>"
+        },
+        {
+            "id": "2024-awards",
+            "text": "<li>Singapore Science and Engineering Fair - Gold</li><li>Singapore Science and Engineering Fair - SAAS Special Award</li><li>Asia Pacific Band Festival - Gold</li><li>16th Singapore National Crystal Growing Challenge - Largest Crystal</li><li>The Queen's Commonwealth Essay Competition - Bronze</li><li>Sieberrsec CTF - 4th Place</li><li>Singapore Physics League - Bronze</li><li>自强不息 award</li><li>Outstanding Student Award</li><li>All Rounded Excellence Award</li>"
+        },
+        {
+            "id": "2021-exp",
+            "text": "<li>Councillor in Training</li>"
+        },
+        {
+            "id": "2022-exp",
+            "text": "<li>School Councillor</li><li>Camp Facilitator</li><li>School Based NDP - Band Marching Contingent</li>"
+        },
+        {
+            "id": "2023-exp",
+            "text": "<li>School Councillor</li><li>Camp Facilitator - Sarimbun Scout Camp</li><li>Science Mentorship Programme</li><li>School Based NDP - Band Marching Contingent</li><li>Hwa Chong Institution Military Band - Student Conductor</li><li>Research Collaboration - Academies of Loudoun (Virginia, USA)</li>"
+        },
+        {
+            "id": "2024-exp",
+            "text": "<li>Hwa Chong Institution Military Band - Student Conductor</li><li>Exchange Programme with students from the Academies of Loudoun, Virginia</li><li>Overall Organising Secretary - Hwa Chong Institution Junior Science Research Camp</li><li>Organising Team - 0xDEADBEEF (CTSS-HCI Computing Exchange Programme)</li><li>Internship at DSO National Laboratories</li>"
+        }
+    ]
+  }

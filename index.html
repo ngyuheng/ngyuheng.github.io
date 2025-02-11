@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">ngyuheng</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="overlay-background" onclick="hideOverlay()"></div>
+        <img class="overlay-image">
+    </div>
+
+    <div class="main">
+        <header>
+            <div class="logo">
+                <a href="/" title="Home">
+                    <h4 id="logo-text">ngyuheng</h4>
+                </a>
+            </div>
+
+            <div class="header-button">
+                <div>
+                    <button title="Change Theme" onclick="changeTheme()">
+                        <img src="/src/icons/dark-mode.svg" alt="theme" class="icons" id="theme-icon">
+                    </button>
+                </div>
+                <div>
+                    <button title="Change Languages" onclick="showLanguages()">
+                        <img src="/src/icons/language.svg" alt="lang" class="icons lang">
+                    </button>
+                    <div class="lang-dropdown">
+                        <div class="lang-button"><button title="English" onclick="changeLanguage('en')">EN</button>
+                        </div>
+                        <div class="lang-button"><button title="Chinese" onclick="changeLanguage('zh')">中文</button>
+                        </div>
+                        <div class="lang-button"><button title="Chinese" onclick="changeLanguage('de')">DE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/more" title="More about me">
+                    <img src="/src/icons/about-me.svg" alt="more" class="icons">
+                </a>
+
+                <a href="/interactives" title="Interactives">
+                    <img src="/src/icons/interactives.png" alt="interact" class="icons">
+                </a>
+            </div>
+        </header>
+
+        <div class="container flex-wrap">
+            <div class="left-column">
+                <div class="about-me content">
+                    <div class="profile-card">
+                        <img src="/src/img/banner.png" alt="banner" class="banner">
+                        <img src="/src/img/pfp.png" alt="profile picture" class="profile-picture">
+                    </div>
+                    <br>
+                    <div id="about-me-text">
+                        Hi, I'm <b>Yu Heng</b>. Welcome to my portfolio!
+                        <br>
+                        <br>
+                        I am a 17 year old located in <b>Singapore</b>. I am a J1 student studying in <a
+                            href="https://hci.edu.sg">Hwa Chong Institution↵</a>.
+                        <br>
+                        <br>
+                        I started learning programming when I was 11. My goal then was to learn how to make computer
+                        games, hence why I started learning <b>C#</b> and <b>Unity</b>. Eventually, I started taking
+                        Computing as a subject in school when I was in Secondary 3, where I learnt Algorithms, Data
+                        Structures, Object Oriented Programming, as well as Databases and Data Management.
+                        <br>
+                        <br>
+                        Ultimately however, I want to venture into the low level languages. In the past two years, I
+                        have embarked on projects using <b>C++</b> and <b>C</b>, ranging from writing algorithms,
+                        writing simulations, and even writing code for a cubesat.
+                        <br>
+                        <br>
+                        In the future, I hope to strengthen my skills in writing <b>Assembly</b> code, as well as
+                        learning how to develop <a
+                            href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA logic↵</a> using
+                        <b>Verilog/VHDL</b>.
+                        <br>
+                        <br>
+                        I am also interested in doing <b>research</b>. I have been doing research projects since I was
+                        in Secondary 2. As of today, I have completed 4 research projects, 2 in the field of
+                        <b>Chemistry</b>, 1 in <b>Physics</b>, and 1 <b>Engineering</b> project.
+                        <br>
+                        <br>
+                        Being formerly my school band's student conductor, I like reading and listening to classical and
+                        band music in my free time. Otherwise, I can be found coding, or watching cat videos on the
+                        internet <a onclick="addCat(); return false;" style="cursor: pointer">😸↵</a>.
+                    </div>
+                </div>
+
+                <div class="my-details content">
+                    <h1 id="my-details-title">My Details</h1>
+                    <p id="location">Location: Singapore</p>
+                    <p id="education">School: <a href="https://hci.edu.sg">Hwa Chong Institution↵</a> (2021 - Present)
+                    </p>
+                    <p id="subjects">Subjects: Physics, Chemistry, Mathematics, German (PCMGm)</p>
+                    <p id="languages">Languages: English, Chinese, German</p>
+                </div>
+
+                <div class="contact-me content">
+                    <h1 id="contact-me-title">Contact Me</h1>
+                    <p id="contact-email">Email: <a
+                            href="mailto:211491L@student.hci.edu.sg">211491L@student.hci.edu.sg↵</a></p>
+                    <p id="contact-insta">Instagram: <a href="https://www.instagram.com/yuheng_28/">yuheng_28↵</a></p>
+                    <p id="contact-discord">Discord: @osdoge</p>
+                    <p id="contact-github">GitHub: <a href="https://github.com/ngyuheng">ngyuheng↵</a></p>
+                </div>
+
+                <div class="language-proficiency content">
+                    <h1 id="language-proficiency-title">Language Proficiency</h1>
+                    <p id="language-disclaimer">Note: The values below reflect my confidence in these languages and are
+                        not based on any standard measurement system.</p>
+                    <div>
+                        <p>Python</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>SQL</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 70%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>C#</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 40%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>HTML5 / CSS3</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 70%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>C++</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 60%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>C</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 40%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Assembly</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 10%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Verilog</p>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-fill" style="--fill-length: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="projects content">
+                    <h1 id="projects-title">Projects</h1>
+                    <p id="projects-intro">Although my GitHub profile contains a wide range of projects, I've selected these examples specifically to showcase their breadth across different domains:                    </p>
+                    <ul>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="project-1-title"><a href="https://github.com/ngyuheng/whatsapp-summariser">WhatsApp Summariser↵</a></h4>
+                                <p id="project-1-organisation">Organisation: Personal</p>
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="project-1-skills">Skills: </span>
+                                        <span class="skill-badge">Web-scraping</span>
+                                        <span class="skill-badge">Prompt Engineering</span>
+                                        <span class="skill-badge">Artificial Intelligence</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="project-1-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="project-1-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="project-1-desc">This project was designed to simplify the process of reading
+                                        WhatsApp messages. Inspired by Google Chat's AI Text Summariser, this project can
+                                        read WhatsApp texts, then use Google Gemini's free API to obtain a summary of the
+                                        texts.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="project-2-title"><a href="https://github.com/turb0space/UART">UART Driver for Arduino ATMega↵</a></h4>
+                                <p id="project-2-organisation">Organisation: <a href="https://www.dso.org.sg/">DSO
+                                        National Laboratories↵</a></p>
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="project-2-skills">Skills: </span>
+                                        <span class="skill-badge">Low-Level Hardware Control</span>
+                                        <span class="skill-badge">Embedded Systems Development</span>
+                                        <span class="skill-badge">Protocol Implementation</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="project-2-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="project-2-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="project-2-desc">Initially part of a larger project, this project is a template
+                                        reusable for future projects, for when there is a need for serial communication
+                                        between the microcontroller and another device via the TX/RX 1 pins.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="project-3-title"><a href="https://github.com/ngyuheng/Science-Alternative-Assessment">Manim Animation↵</a></h4>
+                                <p id="project-3-organisation">Organisation: <a href="https://hci.edu.sg">Hwa Chong
+                                        Institution↵</a></p>
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="project-3-skills">Skills: </span>
+                                        <span class="skill-badge">Manim Framework</span>
+                                        <span class="skill-badge">Object-Oriented Programming</span>
+                                        <span class="skill-badge">Mathematical Visualisation</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="project-3-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="project-3-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="project-3-desc">Manim (Mathematical Animation Engine) is a framework designed to
+                                        provide a structured API for defining animations, objects and scenes. This project
+                                        was a delve into mathematical visualisation, and an opportunity to explain physical
+                                        and mathematical concepts (such as those in Physics) visually.</p>
+                                    <div class="project-banner-container">
+                                        <img src="src/img/project-3-banner.png" alt="project 3" class="project-banner"
+                                            style="object-position: 0% 15%;" onclick="showImage(this.id)" id="project-3-banner">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="research content">
+                    <h1 id="research-title">Research</h1>
+                    <p id="research-intro">Here are some of the science research projects I've worked on:</p>
+                    <ul>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="research-1-title">Synthesis and Properties of Chitin-Derived Hydrogels</h4>
+                                <p id="research-1-organisation">Organisation: <a href="https://hci.edu.sg">Hwa Chong
+                                    Institution↵</a></p>
+                                <div id="research-1-year">
+                                    Year: 2022
+                                </div>
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="research-1-fields">Fields: </span>
+                                        <span class="skill-badge">Organic Chemistry</span>
+                                        <span class="skill-badge">Materials Science</span>
+                                        <span class="skill-badge">Environmental Science</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="research-1-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="research-1-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="research-1-desc">This project aims to investigate the adsorption of heavy metal ions and dyes in chitin-derived hydrogels. The experiment involves the synthesis of hydrogels from chitin derived from crab shells before testing its heavy metal, and dye adsorbability. Heavy metals solutions, namely Cu2+, Fe3+, and Zn2+ ion solutions were used to determine the heavy metal adsorbability of chitin hydrogel while dye solutions, namely Methylene Blue, Direct Red 80 and Methyl Orange solutions, were used to determine the dye adsorbability of chitin hydrogel. The pH of the solutions were also changed to determine its effect on the adsorption of the Direct Red 80, and methylene blue solutions. Of the various different solutions tested, hydrogel performed better than chitin in the adsorption of methylene blue and methyl orange, and in direct red when the solution was basic at pH 12. Chitin performed better in the adsorption of the Cu2+ ion and direct red when neutral at pH 7. However there is negligible difference in the adsorption of Fe3+, and Zn2+ ion solutions.</p>
+                                </div>
+                                <div class="project-banner-container">
+                                    <img src="src/img/research-1.png" alt="FTIR of Hydrogel and Chitin" style="object-position: 0% 60%;" class="project-banner" onclick="showImage(this.id)" id="research-1-banner">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="research-2-title">Optimised Numerical Methods for the Computation of Particles in Fusion Hotspots and Particle Interactions in Magnetized Liner Inertial Fusion (MagLIF)</h4>
+                                <p id="research-2-organisation">Organisation: <a href="https://www.ntu.edu.sg/nie">NTU/NIE↵</a></p>
+                                <div id="research-2-year">
+                                    Year: 2023
+                                </div>
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="research-2-fields">Fields: </span>
+                                        <span class="skill-badge">Plasma Physics</span>
+                                        <span class="skill-badge">Particle Physics</span>
+                                        <span class="skill-badge">Electromagnetism</span>
+                                        <span class="skill-badge">Numerical Methods</span>
+                                        <span class="skill-badge">Computational Physics</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="research-2-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="research-2-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="research-2-desc">Computation of particle interactions is possible. It however requires a lot of computer resources. This project aims to simulate particle interactions in fusion hotspots and Magnetised Liner Inertial Fusion (MagLIF). Using the Barnes-Hut Algorithm, C++, and Python, we can create a more efficient simulation through estimations of particle interactions. The simulation was then used to visualise particle movements. Various events such as the initial velocities of particles, coulombs explosion, compression of fusion fuel and general particle interactions in fusion hotspots and MagLIF. Ongoing work is being done to reduce the prevalence of bugs and improve the accuracy of this model even further. This model can allow for the simulation of particle interactions to be more easily accessible regardless of device specifications.</p>
+                                </div>
+                                <div class="project-banner-container">
+                                    <img src="src/img/research-2.png" alt="Coulomb Explosion Simulated" class="project-banner" onclick="showImage(this.id)" id="research-2-banner">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="research-3-title">Synthesising and Comparing the Microplastic Degradation Efficiencies of Magnetically Removable Bismuth Based Microswimmers</h4>
+                                <p id="research-3-organisation">Organisation: <a href="https://hci.edu.sg">Hwa Chong Institution↵</a></p>
+                                <div id="research-3-year">
+                                    Year: 2024
+                                </div>
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="research-3-fields">Fields: </span>
+                                        <span class="skill-badge">Photonics</span>
+                                        <span class="skill-badge">Inorganic Chemistry</span>
+                                        <span class="skill-badge">Organic Chemistry</span>
+                                        <span class="skill-badge">Material Science</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="research-3-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="research-3-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="research-3-desc">Microplastics, being non-biodegradable, present a critical environmental and biological hazard, impacting a wide array of organisms, including humans. However, microswimmers have been shown as a promising area of research to combat these problems by degrading these microplastics, although the efficiencies of microswimmers may differ widely. Hence, this study aims to synthesise and evaluate bismuth-based microswimmers to determine their efficiency in degrading commonly encountered plastic types such as polyvinyl chloride and polystyrene. 
+                                        <br><br>Through comparative analysis, this project aims to elucidate the potential of these microswimmers in mitigating microplastic pollution, contributing to the development of effective environmental remediation strategies. Characterisation of microswimmers were conducted before the experimentation process to determine its morphological structure and band gaps, which assist in the movement and degradation of microplastics. The characterised microswimmers were then able to successfully degrade microplastics of &lt;100µm in a hydrogen peroxide medium, which acts as fuel to aid the propulsion of microswimmers. 
+                                        <br><br>This study identifies BiVO4 and Bi2WO6 to both be comparable microswimmers in terms of their efficiencies in degrading microplastics in water and hydrogen peroxide, with both performing significantly better in terms of degrading microplastics, as compared to decomposition in water only due to the free radicals formed from UV and VIS wavelengths. Thus, both BiVO4 and Bi2WO6 microswimmers are promising in terms of their ability to remove microplastics from water through degradation via Advanced Oxidative Processes (AOP).</p>
+                                </div>
+                                <div class="project-banner-container">
+                                    <img src="src/img/research-3.png" alt="BiVO4 Microswimmers under Scanning Electron Microscope" class="project-banner" style="object-position: 0% 15%;" onclick="showImage(this.id)" id="research-3-banner">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <h4 id="research-4-title">Optimisation of Continuous Development from Flatsat to 3D Cubesat – A Novel Over-the-Air Solution</h4>
+                                <p id="research-4-organisation">Organisation: <a href="https://dso.org.sg">DSO National Laboratories↵</a></p>
+                                <div id="research-4-year">
+                                    Year: 2024
+                                </div>
+                                
+                                <div class="project-last-line">
+                                    <div>
+                                        <span id="research-4-fields">Fields: </span>
+                                        <span class="skill-badge">Electrical Engineering</span>
+                                        <span class="skill-badge">Software Engineering</span>
+                                        <span class="skill-badge">Embedded Systems</span>
+                                    </div>
+                                    <button onclick="showAbstract(this.id)" id="research-4-button" class="abstractButton"><p><u>Read More</u><p></button>
+                                </div>
+                                <div id="research-4-abstract" class="project-abstract">
+                                    <hr>
+                                    <p id="research-4-desc">Cube Satellites (CubeSats) are preferred for their low cost and short development cycles compared to large-scale satellites, and especially popular for Educational Institutions for research purposes. However, industry established development and practices can be improved for time efficiency.
+                                        This report validates the use of Over-The-Air (OTA) reprogramming and debugging to eliminate the need to deconstruct working hardware, thus eliminating points of failure, and significantly decreasing development time while keeping costs low.
+                                    </p>
+                                </div>
+                                <div class="project-banner-container">
+                                    <img src="src/img/research-4.png" alt="Cubesat Bill of Materials" class="project-banner" onclick="showImage(this.id)" id="research-4-banner">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Made with HTML & CSS - Last Updated: 2 February 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
