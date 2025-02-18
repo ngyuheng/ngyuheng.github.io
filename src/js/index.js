@@ -1,6 +1,8 @@
 let readMore = "Read More";
 let readLess = "Read Less";
 
+let yearTitle = "Year:";
+
 try {
     var gallery = document.querySelector('.gallery-view');
     gallery.innerHTML = '<img src="/src/img/null.png" alt="Gallery image">';
@@ -39,6 +41,7 @@ async function changeChinese() {
     // change readMore and readLess to Chinese
     readMore = "更多";
     readLess = "更少";
+    yearTitle = "年:";
 
     // read json file in src/locale/zh.json
 
@@ -72,6 +75,9 @@ async function changeChinese() {
         }
     }
 
+    const yearTitleElement = document.getElementById("year-title");
+    yearTitleElement.innerHTML = yearTitle;
+
     // Update the HTML <html> lang attribute for accessibility
     document.documentElement.lang = "zh";
 }
@@ -83,6 +89,7 @@ async function changeEnglish() {
     // change readMore and readLess to English
     readMore = "Read More";
     readLess = "Read Less";
+    yearTitle = "Year: ";
 
     // read json file in src/locale/en.json
 
@@ -115,6 +122,9 @@ async function changeEnglish() {
             button.innerHTML = "<p><u>" + readMore + "</u></p>";
         }
     }
+
+    const yearTitleElement = document.getElementById("year-title");
+    yearTitleElement.innerHTML = yearTitle;
 }
 
 async function changeGerman() {
@@ -123,6 +133,7 @@ async function changeGerman() {
     // change readMore and readLess to English
     readMore = "Mehr lesen";
     readLess = "Weniger lesen";
+    yearTitle = "Jahr:";
 
     // read json file in src/locale/en.json
 
@@ -155,6 +166,9 @@ async function changeGerman() {
             button.innerHTML = "<p><u>" + readMore + "</u></p>";
         }
     }
+
+    const yearTitleElement = document.getElementById("year-title");
+    yearTitleElement.innerHTML = yearTitle;
 }
 
 function changeLanguage(language) {
