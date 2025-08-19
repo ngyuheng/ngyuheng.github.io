@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ng Yu Heng</title>
+    <script src="src/script/index.js"></script>
+    <script src="src/script/theme.js"></script>
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="src/script/index.js"></script>
     <link rel="icon" type="image/x-icon" href="src/icons/logo.ico">
 
 <body class="root">
@@ -20,14 +21,17 @@
         <nav>
             <div>
                 <div class="nav-content">
-                    <Button class="nav-button" onclick="scrollToAchievements()">
-                        Achievements
+                    <Button class="nav-button" onclick="scrollToProjects()">
+                        Projects
                     </Button>
                     <Button class="nav-button" onclick="scrollToResearch()">
                         Research
                     </Button>
-                    <Button class="nav-button" onclick="scrollToProjects()">
-                        Projects
+                    <Button class="nav-button" onclick="scrollToAchievements()">
+                        Achievements
+                    </Button>
+                    <Button class="nav-button" onclick="toggleDarkMode()">
+                        <img class="toggle-icon" src="src/icons/dark-mode.svg" alt="Toggle Dark Mode">
                     </Button>
                 </div>
             </div>
