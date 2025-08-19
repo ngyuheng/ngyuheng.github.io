@@ -13,7 +13,22 @@
     --header-padding: 15px 15%;
     --header-content-width: 25%;
     --nav-display: flex;
+    --svg-filter: none;
+    --badge-background: #f0f0f0;
 }
+
+.dark-mode {
+    --font-color: #dbdbdb;
+    --font-secondary-color: #b0b0b0;
+    --border: #262626;
+    --foreground: #e0e0e0;
+    --background: #0a0a0a;
+    --secondary-background: #111111;
+
+    --svg-filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(20deg) brightness(102%) contrast(101%);
+    --badge-background: #262626;
+}
+
 /* when screen width is less than 768px */
 @media (max-width: 767px) {
     :root {
@@ -36,6 +51,19 @@ html {
     font-size: var(--font-size);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--font-color);
+}
+
+img {
+    filter: var(--svg-filter);
+}
+
 * {
     box-sizing: border-box;
     font-family: var(--font-family);
@@ -46,6 +74,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--background);
 }
 
 p {
@@ -82,6 +111,19 @@ header {
 
 .nav-content {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.nav-button img {
+    height: 1em;
+    width: 1em;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .nav-button {
@@ -94,7 +136,10 @@ header {
     padding: 8px 12px;
     border-radius: 10px;
     transition: background 0.3s;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* float: right; */
 }
 
 .nav-button:hover {
@@ -139,6 +184,10 @@ section {
     margin-bottom: 50px;
 }
 
+li::marker {
+    color: var(--font-secondary-color);
+}
+
 ul {
     margin: 14px 0;
 }
@@ -180,6 +229,7 @@ a > img {
     background: var(--font-color);
     color: var(--background);
     transition: background 0.3s;
+    padding: 15px 24px;
 }
 
 .button-black:hover {
@@ -270,7 +320,7 @@ a:hover {
 }
 
 .badge {
-    background: var(--secondary-background);
+    background: var(--badge-background);
     border-radius: 10px;
     color: var(--font-color);
     display: inline-block;
