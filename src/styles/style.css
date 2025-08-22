@@ -15,6 +15,7 @@
     --nav-display: flex;
     --svg-filter: none;
     --badge-background: #f0f0f0;
+    --navbar-justify: space-between;
 }
 
 .dark-mode {
@@ -32,10 +33,11 @@
 /* when screen width is less than 768px */
 @media (max-width: 767px) {
     :root {
-        --font-size: 16px;
+        --font-size: calc(8px + 1.5vw);
         --header-padding: 10px 5%;
         --header-content-width: 200%;
         --nav-display: none;
+        --navbar-justify: center;
     }
 }
 
@@ -85,7 +87,7 @@ header {
     border-bottom: 1px solid var(--border);
     border-top: 1px solid var(--border);
     display: flex;
-    justify-content: space-between;
+    justify-content: var(--navbar-justify);
     align-items: center;
     padding: var(--header-padding);
     position: sticky;
@@ -103,7 +105,7 @@ header {
 }
 
 .header-button {
-    padding: 0px;
+    padding: 0px 12px;
     border: none;
     background: none;
     cursor: pointer;
